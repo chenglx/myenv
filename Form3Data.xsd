@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 rel. 2 sp1 (http://www.altova.com) by Hangfei cheng (Morningstar Inc.) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Form3Info">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element name="InsiderRecord">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="AccessionNumber" type="xs:string"/>
+							<xs:element name="MSCompanyID" type="xs:string" fixed="10"/>
+							<xs:element name="CompanyName" type="xs:string"/>
+							<xs:element name="FilingDate" type="xs:date"/>
+							<xs:element name="IssuerCIK" type="xs:string"/>
+							<xs:element name="GlobalPersonId" type="xs:string"/>
+							<xs:element name="RptOwnerCIK" type="xs:string"/>
+							<xs:element name="RptFirstName" type="xs:string"/>
+							<xs:element name="RptMiddleName" type="xs:string"/>
+							<xs:element name="RptLastName" type="xs:string"/>
+							<xs:element name="RptFullName" type="xs:string"/>
+							<xs:element name="RptOwnerStreet" type="xs:string"/>
+							<xs:element name="RptOwnerCity" type="xs:string"/>
+							<xs:element name="RptOwnerState" type="xs:string"/>
+							<xs:element name="RptOwnerZipCode" type="xs:string"/>
+							<xs:element name="IsDirector" type="xs:boolean"/>
+							<xs:element name="IsOfficer" type="xs:boolean"/>
+							<xs:element name="IsTenPercentOwner" type="xs:boolean"/>
+							<xs:element name="IsOther" type="xs:boolean"/>
+							<xs:element name="Relationship" type="xs:string" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
