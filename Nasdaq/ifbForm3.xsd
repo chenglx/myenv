@@ -25,6 +25,14 @@
 									</xs:restriction>
 								</xs:simpleType>
 							</xs:element>
+							<xs:element name="FilingType">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="20"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="PeriodEndDate" type="xs:date"/>
 							<xs:element name="FilingDate" type="xs:date"/>
 							<xs:element name="IssuerCIK" minOccurs="0">
 								<xs:simpleType>

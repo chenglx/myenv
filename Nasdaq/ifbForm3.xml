@@ -5,6 +5,8 @@
 		<AccessionNumber>0001179110-11-008696 </AccessionNumber>
 		<MSCompanyID>10</MSCompanyID>
 		<CompanyName>Aon Corp.</CompanyName>
+		<FilingType>3</FilingType>
+		<PeriodEndDate>2010-06-30</PeriodEndDate>
 		<FilingDate>2011-05-26</FilingDate>
 		<IssuerCIK>315293</IssuerCIK>
 		<GlobalPersonId>PS00000ZNT</GlobalPersonId>
@@ -27,6 +29,8 @@
 		<AccessionNumber>0001022871-11-000001</AccessionNumber>
 		<MSCompanyID>0C0000189Q</MSCompanyID>
 		<CompanyName>Axiom Gold &amp; Silver Corp</CompanyName>
+		<FilingType>3</FilingType>
+		<PeriodEndDate>2010-09-30</PeriodEndDate>
 		<FilingDate>2011-01-14</FilingDate>
 		<IssuerCIK>1022871</IssuerCIK>
 		<GlobalPersonId>PS00001G0F</GlobalPersonId>
