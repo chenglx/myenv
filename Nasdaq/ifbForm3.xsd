@@ -1,23 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- edited with XMLSpy v2008 rel. 2 sp1 (http://www.altova.com) by Hangfei cheng (Morningstar Inc.) -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
-	<xs:element name="Form3Info">
-		<xs:annotation>
-			<xs:documentation>Comment describing your root element</xs:documentation>
-		</xs:annotation>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xdb="http://xmlns.oracle.com/xdb" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Form3Info" xdb:defaultTable="IFB_FORM3">
 		<xs:complexType>
-			<xs:sequence maxOccurs="unbounded">
-				<xs:element name="InsiderRecord">
+			<xs:sequence>
+				<xs:element name="InsiderRecord" minOccurs="0" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element name="AccessionNumber">
-								<xs:simpleType>
-									<xs:restriction base="xs:string">
-										<xs:maxLength value="20"/>
-									</xs:restriction>
-								</xs:simpleType>
-							</xs:element>
-							<xs:element name="MSCompanyID" type="xs:string" fixed="10"/>
 							<xs:element name="CompanyName">
 								<xs:simpleType>
 									<xs:restriction base="xs:string">
@@ -86,7 +75,7 @@
 							<xs:element name="RptOwnerStreet" minOccurs="0">
 								<xs:simpleType>
 									<xs:restriction base="xs:string">
-										<xs:maxLength value="50"/>
+										<xs:maxLength value="100"/>
 									</xs:restriction>
 								</xs:simpleType>
 							</xs:element>
@@ -132,7 +121,7 @@
 									</xs:restriction>
 								</xs:simpleType>
 							</xs:element>
-							<xs:element name="IsOther" fixed="1" minOccurs="0">
+							<xs:element name="IsOther" minOccurs="0">
 								<xs:simpleType>
 									<xs:restriction base="xs:string">
 										<xs:length value="1"/>
@@ -147,6 +136,20 @@
 								</xs:simpleType>
 							</xs:element>
 						</xs:sequence>
+						<xs:attribute name="AccessionNumber" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:length value="20"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="MSCompanyID" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:length value="10"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
 					</xs:complexType>
 				</xs:element>
 			</xs:sequence>
