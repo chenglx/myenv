@@ -2,4 +2,4 @@
 
 ## include puppet script to manage the linux environment
 
-## include personal document
+## include personal environment setting for bash and vim
