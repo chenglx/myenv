@@ -1,4 +1,7 @@
+[user]
+	email = chenglx@gmail.com
+	name = Lixin Cheng
 [color]
 	ui = true
 [core]
-	autocrlf = true
+	autocrlf = input
