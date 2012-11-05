@@ -11,6 +11,7 @@ myenv
 Run: . ./deploy.sh
 
 -----
-The git repo online:
-https://chenglx@github.com/chenglx/myenv.git
-https://chenglx@bitbucket.org/chenglx/myenv.git
+## The git repo online:
+
+### https://chenglx@github.com/chenglx/myenv.git
+### https://chenglx@bitbucket.org/chenglx/myenv.git
