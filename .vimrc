@@ -1,5 +1,14 @@
 filetype plugin indent on
 
+" Rakefile
+au BufNewFile,BufRead [rR]akefile,*.rake set filetype=ruby
+
+" Bundler
+au BufNewFile,BufRead Gemfile set filetype=ruby
+
+" Capistrano
+au BufNewFile,BufRead Capfile set filetype=ruby
+
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
